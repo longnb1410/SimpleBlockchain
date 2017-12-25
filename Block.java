@@ -30,5 +30,4 @@ public class Block {
     public int getBlockHash() {
         return blockHash;
     }
-    //
 }

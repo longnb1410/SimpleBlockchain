@@ -28,6 +28,4 @@ public class Main {
         System.out.println("Hash of block 3:");
         System.out.println(block3.getBlockHash());
     }
-
-
 }
