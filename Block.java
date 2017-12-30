@@ -8,14 +8,14 @@ public class Block {
 
     private int preHash;    //previous hash
     private int blockHash;  //current hash
-    private String[] transactions;
+    private String[] transactions; //transactions
 
     public Block(int preHash, String[] transactions) {
         this.preHash = preHash;
         this.transactions = transactions;
 
-        Object[] contents = {Arrays.hashCode(transactions), preHash}; //hash transactions of contents
-        this.blockHash = Arrays.hashCode(contents);      //generate current block of hash
+        Object[] contents = {Arrays.hashCode(transactions), preHash};  //hash transactions and preHash ~> contents
+        this.blockHash = Arrays.hashCode(contents);      //generate current block hash base on preHash and transactions .
 
     }
 
